@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+        <!--Por la simplicidad de estas paginas he omitido el main, el head y el footer, no obstante en index si estan para al menos usarlas una vez y que se vea que se que son-->
+    <header>
+    
+    <nav>
+        <img class="logo" src="../assets/Images/Moebius.jpg" alt="Logotipo banda de moebius">
+        <a href="../index.html">INDEX</a>
+        <a href="./portfolio.html">PORTFOLIO</a>
+        <a href="./biography.html">BIOGRAFIA</a>
+    </nav>
+    </header>
+    <main>
+
+    <section class="flexBoxPequeño">
+        <h2>formulario de evaluacion</h2>
+        <form action="">
+
+            <p>Nombre</p>
+
+            <label for="namePupil">Nombre Alumno</label>
+            <input type="text" id="namePupil" name="namePupil">
+
+            <p>Que tal lo ha hecho Pablo</p>
+
+            <input type="radio" id="Bien" name="Evaluacion" value="Bien">
+            <label for="Bien">Bien</label><br>
+            <input type="radio" id="Regular" name="Evaluacion" value="Regular">
+            <label for="css">Regular</label><br>
+            <input type="radio" id="Mal" name="Evaluacion" value="404NotFound">
+            <label for="Mal">404Notfound</label>
+
+            <p> Que tiene que repasar Pablo</p>
+
+            <input type="checkbox" id="JavaScript" name="thingsToReview" value="JavaScript">
+            <label for="JavaScript"> JavaScript</label><br>
+            <input type="checkbox" id="HTML" name="Repaso" value="Car">
+            <label for="HTML"> HTML</label><br>
+            <input type="checkbox" id="CSS" name="things to review" value="HTML">
+            <label for="CSS"> CSS</label>
+            <p>Todo hasta el dia de su muerte(profesional o la del lenguaje y esto no es una opcion porque es la unica
+                opcion</p>
+            <img src="../assets/Images/todaLaVidaAprendiendo.jpg" alt="Homer Desquiciado">
+
+            <p>¿Cual es el dia mas cercano en que Pablo tenga que irse de the bridge?</p>
+
+            <label for="datemin">Dia mas cercano</label>
+            <input type="date" id="datemin" name="datemin" min="2020-11-30">
+            <p>¿Es posible que Pablo este mas tiempo de lo que dura el curso con nosotros por ejemplo como T.A?</p>
+            <label for="datemax">Dia mas lejano:</label>
+            <input type="date" id="datemax" name="datemax" max="2022-02-30">
+
+            <p>Quiero Mandarte Spam</p>
+
+            <label for="email">Dime Tu email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <h4>Hay muchos otros inputs pero no me da tiempo a todos pues son las 23:22 corre pabloo correee</h4>
+
+            <input type="submit" value="Send" />
+
+            
+
+
+
+
+
+        </form>
+    </section>
+    </main>
+    <footer>
+        <p>Si quieres saber algo mas preguntame a mi jajasaludos</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+* {
+  text-justify: auto;
+  font-size: 16px;
+}
+main {
+  background-color: darksalmon;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: brown;
+  padding:10px;
+  padding-bottom: 5px;
+  position: sticky;
+  top:0;
+  opacity: 0.9;
+}
+
+footer {
+  border: solid black 5px;
+  background-color: rebeccapurple;
+}
+footer>p {
+  text-align: center;
+}
+header {
+  border: solid black 5px;
+}
+ul {
+  list-style: none;
+  padding: 1% 1%;
+}
+
+h2 {
+  color: blueviolet;
+  font-style: oblique;
+  text-decoration: underline;
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+  padding: 3px;
+}
+
+h3 {
+  color: deeppink;
+  font-style: oblique;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h4 {
+  font-style: italic;
+  text-align: underline;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+}
+
+a:hover {
+  color: pink;
+}
+
+iframe {
+  width: 100%
+}
+
+.flexBoxPequeño {
+  /*Aqui usamos un flexbox con la direccion principal implantada en la vertical, seria lo mismo que no usarlo, pero al menos asi demuestro que se cambiar la direccion de la justify-content...*/
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.textoMasFoto {
+  border: darkred solid 5px;
+  border-collapse: separate;
+  margin-top: 1%;
+  padding-bottom: 4%;
+}
+
+.content1 {
+  text-decoration: underline darkred 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.logo {
+  width: 20%;
+}
+
+@media only screen and (min-width: 576px) {
+  * {
+    font-size: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    margin: auto;
+
+  }
+
+  ol {
+    list-style: none;
+    padding: 3px;
+  }
+
+  .flexBoxPequeño {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  * {
+    font-size: 24px;
+  }
+
+  img {
+    max-width: 100%;
+    margin: auto;
+
+  }
+
+  ol {
+    list-style: none;
+    padding: 3px;
+  }
+
+  .flexBoxMediano {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexBoxPequeño {
+    flex-direction: column;
+  }
+
+  .textoMasFoto {
+    flex: 1;
+  }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+  * {
+    font-size: 32px;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+  }
+/*Aqui el flex grow petarde se ajusta y desajusta un poco segun vas moviendo la pantalla, lo investigare mas adelante yo si me dejais jaja*/
+
+  .flexBoxGrande{
+    display: flex;
+  }
+  .flexBoxMediano {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .flexBoxPequeño {
+    display: flex;
+    flex-direction: row;
+  }
+  .textoMasFoto {
+    flex: 1;
+  }
+}

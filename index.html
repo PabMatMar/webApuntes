@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html a traves de la banda de moebius</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="./assets/Images/Moebius.jpg" alt="Logotipo banda de moebius">
+            <a href="./pages/biography.html">BIOGRAFIA</a>
+            <a href="./pages/portfolio.html">PORTFOLIO</a>
+            <a href="./pages/contact.html">CONTACTO</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section>
+            <!--Hay dos secciones cada una con un articulo, iba a meter mas cosas pero no me dio tiempo-->
+
+            <h2>TEORIA</h2>
+
+            <article>
+
+                <h3><u>HTML</u></h3>
+
+                <!--Hay una ul, y en cada li anido un h4 y un ol, en los li de la ol hay una imagen o video hermana-->
+
+                <ul>
+
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Elementos, etiquetas y atributos:</h4>
+                        <ol class="content">
+                            <li>El elemento es lo que contiene el contenido de la pagina web, o tambien, otros
+                                elementos.</li>
+                            <li>Las etiquetas son la forma en que html reconoce y configura un elemento. Hay dos, una
+                                que comienza en la apertura del elemento, y otra que lo cierra. Ambas tienen el nombre
+                                del elemento y estan envueltas entre simboles de menor que antes del nombre y mayor que
+                                despues del nombre. La etiqueta de cierre ademas tiene una barra oblicua entre el nombre
+                                y el simbolo menor que.</li>
+                            <li>Los atributos se introducen en la etiqueta de apertura, entre el nombre (seguido de un
+                                espacio) y el simbolo mayor que. Los atributos constan de un nombre, un igual, y un
+                                valor escrito entre comillas. </li>
+                            <img src="./assets/Images/elemntsLabelsAndAtributtes.png"
+                                alt="Elementos etiquetas y atributos HTML">
+                        </ol>
+
+                    </li>
+
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Anidamiento, sangrado y espaciado:</h4>
+                        <ol class="content">
+
+                            <li>El anidamiento es el concepto que refiere a un elemento html dentro de otro, el elemento
+                                padre es el contenedor, el elemento hijo es el contenido, el hijo suele heredar las
+                                caracteristicas (propiedades) atribuidas mediante clase a su padre.</li>
+                            <li>El sangrado es la forma en la que podemos ver con facilidad que un elemento es hijo de
+                                otro (para ello primero debemos darle formato al codigo), habiendo dos espacios
+                                horizontales hacia la derecha entre el padre y el hijo.</li>
+                            <li>El espaciado es la linea de codigo que se deja entre el cierre de un elemento html
+                                estructural y otro.</li>
+                            <li>Los saltos de linea en el texto no son manifestados en la web, asi como los espacios
+                                entre las etiquetas y el comienzo del texto.</li>
+                            <img src="./assets/Images/Nesting.png" alt="Anidamiento sangria y espaciado HTML">
+                        </ol>
+                    </li>
+
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Estructura Basica: etiquetas body, head y html.</h4>
+                        <ol class="content">
+                            <li> El html: Envuelve todo el documento html salvo la etiqueta DOCTYPE.</li>
+                            <li>El head: contiene links a otros documentos de tipo extensivos, metadatos y la etiqueta
+                                tittle que sirve para mostrar el nombre de la pagina en la pestaña de la misma.</li>
+
+                            <li> El body: Contiene todo lo que pueda ser visible en la pagina, esta a su vez se
+                                estructura.</li>
+                            <img class="imageOne" src="./assets/Images/headBody.png" alt="Estructura basica HTML">
+
+                        </ol>
+                    </li>
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Estructura dentro del body:</h4>
+                        <ol class="content">
+                            <li>El header: Es la cabecera de nuestro documento visible, en ella incluimos enlaces para
+                                movernos por los diferentes apartados de nuestra pagina, asi como un logotipo o/y nombre
+                                de nuestra pagina (no confundir con lo que ocurre en head que es la vinculacion de los
+                                archivos) </li>
+                            <li>El main: En esta parte introduccimos todo lo que nuestra pagina ofrece, divido en
+                                secciones, articulos, parrafos, imagenes, lagrimas...</li>
+                            <li>El footer: Aqui, por ultimo, pondremos los registros de marca. Añadimos tambien un
+                                dupicado del link de contacto, para que aquellos que se hayan sentido interesados al
+                                leer nuestro contenido, no pierdan la sensacion de querer saber mas al volver hacia
+                                arriba a buscar el link de contacto y se marchen. </li>
+                            <img src="./assets/Images/body.png" alt="Header Main footer HTML">
+                        </ol>
+                    </li>
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Etiquetas para introducir el contenido:</h4>
+                        <ol class="content">
+                            <li>Los encabezados o titulos y subtitulos. Hay seis, se denominan desde la etiqueta h1
+                                hasta la h6 dando un valor de negrita (bold) a la letra y siendo mayor cuanto menor es
+                                el numero de h.</li>
+                            <li> Los parrafos, es donde escribimos nuestro contenido escrito (hum que bien hablar) Se
+                                envuelven en una etiqueta p y su tamaño por defecto es de 16px.</li>
+                            <img src="assets/Images/HeadsAndP.png" alt="Heads And P HTML">
+                        </ol>
+                    </li>
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Secciones y articulos:</h4>
+                        <ol class="content">
+                            <li>En una pagina por lo general trataremos varios conceptos de un mismo tema, para esto
+                                usamos las secciones, o tambien para tratar distintos temas en una pagina mas extensa.
+                                La
+                                etiqueta se denomina section. </li>
+                            <li>Dentro de las secciones ademas añadiremos articulos, estos bien pueden usarse para
+                                tratar los distintos items de un concepto. La etiqueta se denomina article.</li>
+                            <li>Estas etiquetas dan diferenciacion a nuestro contenido permitiendonos darle css de forma
+                                separada, asi como atributos para enlaces a las mismas desde el encabezado, hamburguesa,
+                                u otras barras de navegacion dentro de nuestra pagina.</li>
+                            <img src="./assets/Images/sectionAndArticle.png" alt="Sections And Articles HTML">
+                        </ol>
+                    </li>
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Enlaces a otras paginas y la etiqueta nav:</h4>
+                        <ol class="content">
+                            <li>Podemos convertir casi cualquier elemento en un enlace envolviendo en una etiqueta de
+                                ancla, o a. Dentro de la etiqueta a de apertura tendremos un atributo href para la
+                                direccion que atribuiremos al elemento.</li>
+                            <li>Si al enlace le añadimos el atributo target con el valor _blank, el enlace se abrirá en
+                                otra pestaña haciendo que el cliente no tenga que volver a nuestra pagina.</li>
+                            <li>La etiqueta nav nos permite crear una barra de navegacion, en ella incluimos enlaces
+                                para dentro de nuestra pagina, o para fuera.</li>
+                            <img src="./assets/Images/links.png" alt="links HTML">
+                        </ol>
+                    </li>
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Imagenes</h4>
+                        <ol class="content">
+                            <li>Para insertar imagenes usamos una etiqueta img. La etiqueta img es de cierre automatico,
+                                es decir, no requiere etiqueta de cierre. </li>
+                            <li>Dento de la misma contenemos el atributo src para la dirección de la imagen, ademas,
+                                guardaremos nuestra imagen en nuestro doc para no depender de una fuente externa.</li>
+                            <li>Tambien colocaremos el atributo alt para poner una descripcion de la imagen. Esto ultimo
+                                ayuda a aumentar nuestra efectividad en los motores de busqueda, ya que estos solo
+                                reconocen escritura y no imagen.</li>
+                            <li>Para personas ciegas el softward de reconocimiento leera la descripcion escrita en el
+                                atributo alt de nuestra imagen.</li>
+                            <li>Podemos obtener imagenes gratuitas para descargar de la pagina <a
+                                    href="https://www.pexels.com/es-es/" target="_blank">pexels.</a></li>
+                            <img src="./assets/Images/Imagen.png" alt="Etiqueta Imagen HTML">
+                        </ol>
+                    </li>
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Videos</h4>
+                        <ol class="content">
+                            <li>Para insertar videos guardados en nuestros docus usamos la etiqueta video.</li>
+                            <li>En ella tendremos un atributo src con la direccion de nuestro video.</li>
+                            <li>Tambien tendremos un atributo alt para la descripcion.</li>
+                            <li>Un atributo width y un atributo height para definit el ancho y el alto de nuesto video.
+                            </li>
+                            <li>Un atributo controls para que el navegador nos brinde unos controles de play y demas.
+                            </li>
+                            <li>Para sinsertar videos desde youtube usamos la etique iframe que ya viene completa en la
+                                opcion de compartir en youtube, solo deberemos clicar en la opcion con los simbolos
+                                menor que mayor que.</li>
+                            <img src="./assets/Images/Video.png" alt="Etiqueta Video HTML">
+
+                        </ol>
+                    </li>
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Tablas</h4>
+                        <ol class="content">
+                            <li>Aunque ya no se crean tablas picando codigo, podemos hacerlo, una tabla consta de una
+                                cabecera, filas, columnas y datos.</li>
+                            <li>La propia tabla se engloba en la etiqueta table.</li>
+                            <li>La primera etiqueta que introducimos es la de la cabecera, th, en ella escribiremos si
+                                lo deseamos el titulo de nuestra tabla.</li>
+                            <li>La sefunda es tr, esta configura el numero de filas.</li>
+                            <li>La tercera y ultima es la td, esta se anida en tr, en ella se escriben los datos. La
+                                cantidad de celdas y de columnas viene dada por el numero de td que anidemos en la tr
+                                (la tr que tenga mas td sera la que determine la cantidad de columnas)</li>
+                            <li>Podemos añadir un atributo colspan para que una celda se expanda horizontalmente hacia
+                                la derecha a la siguiente dandole valor numerico en funcion de cuantas zeldas en esa
+                                direccion queremos que ocupe. El rowspan nos creara una celda espandida verticlamente
+                                hacia abajo que ocupe el numero de columnas que le digamos, pero esa celda no tomara el
+                                espacio de ninguna otra, es decir, creara una nueva columna.</li>
+                            <img src="./assets/Images/Table.png" alt="Tablas HTML">
+                        </ol>
+                    </li>
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Listas Ordinales e Unordinales</h4>
+                        <ol class="content">
+                            <li>Las listas ordinales u ordenadas numeran sus eleementos. Se configuran escribiendo la
+                                etiqueta ul y anidando en ella tantas etiquetas li como elementos queramos que tenga la
+                                lista.
+                            </li>
+                            <li>Las listas unordinales o desordenadas NO numeran sus eleementos. Se configuran
+                                escribiendo la etiqueta ul y anidando en ella tantas etiquetas li como elementos
+                                queramos que tenga la lista.</li>
+                            <img src="./assets/Images/ordinalAndUnordinalLists.png"
+                                alt="Listas ordenadas y desordenadas HTML">
+                        </ol>
+                    </li>
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Formularios</h4>
+                        <ol class="content">
+                            <li>Los formularios son preguntas que hacemos a los internautas, estas preguntas pueden ser
+                                de muchos tipos y para muchos fines, contraseñas, opiniones, reseñas, etc.</li>
+                            <li>Todos los formularios se contienen en una etiqueta form, esta suele tener dos atributos,
+                                el atributo action que define la ubicación (URL) donde se enviaran los datos que el
+                                formulario ha recopilado una vez validado y el atributo method que definira con que
+                                metedo se envian (suelen ser get o post).</li>
+                            <li>El elemento label es el que contine la exigencia o pregunta que el formulario realiza,
+                                este tiene un atributo for para ser asociado al input donde el internauta respondera a
+                                nuestra pregunta.</li>
+                            <li>El elemento input es el que contiene el campo de la respuesta y el tipo de pregunta, los
+                                hay de muchos tipos: texto, password, radio, checkbox, etc puedes ver una lista de todos
+                                ellos <a href="https://www.w3schools.com/html/html_form_input_types.asp"
+                                    target="_blank">aqui</a>
+                                Ademas, el elemento input consta de dos atributos:
+                                <ol>
+                                    <li>El name, este atributo le dice al servidor el nombre del input, <B> esto es muy
+                                            importe.</B></li>
+                                    <li>El id, con este atributo asociamos el input al label al darle el mismo valor.
+                                    </li>
+
+                                </ol>
+                            </li>
+                            <li>El elemento button sirve para enviar el formulario, tiene un atributo type con el valor
+                                submmit, tambien puede usarse un input tipo type, pero el button puede introducir el
+                                submmit en una imagen u otro elemento.</li>
+                            <img src="./assets/Images/Forms.png" alt="Formularios HTML">
+                        </ol>
+                    </li>
+
+                    <li class="textoMasFoto">
+                        <h4 class="content1">Otras etiquetas comunes</h4>
+                        <ol class="content">
+                            <li>La etiqueta u sirva para subrayar el texto que envuelve.</li>
+                            <li>La etiqueta b sirve para dar formato negrita al texto que envuelve, tambien la etiqueta
+                                strong.</li>
+                            <li>La etiqueta i sirve para dar formato cursiva al texto que envuelve, tambien la etiqueta
+                                em.</li>
+                            <li>La etiqueta br sirve para hacer saltos de linea, sin embargo, su especificidad es la mas
+                                alta por lo que no debe usarse.</li>
+                            <li>Las etiquetas anteriores son estilos en linea y salvo quiza la etiqueta b (de forma
+                                especifica a unas pocas palabras) el resto no deben usarse y si se usan...</li>
+                            <a href="https://www.youtube.com/watch?v=zWu4BRCV9qw" target="_blank"><img
+                                    src="./assets/Images/golpeDeRemo.jpg" alt="No debes usar br"></a>
+                        </ol>
+                    </li>
+                </ul>
+
+            </article>
+        </section>
+
+
+
+        <section>
+            <h1>LA BIBLIA DEL FRONT-END </h1>
+
+            <article>
+                <p>Cualquier cosa que busquemos de html o css (entre otros lenguajes) estara aqui: <a
+                        href="https://www.w3schools.com/" target="_blank"> W3school</a>
+                </p>
+
+            </article>
+
+
+        </section>
+
+
+
+    </main>
+    <footer>
+
+        <p>Pagina web diseñada por un alumno que prefiere no ser identificado con semejante chapuza.</p>
+
+
+    </footer>
+
+</body>
+
+</html>
